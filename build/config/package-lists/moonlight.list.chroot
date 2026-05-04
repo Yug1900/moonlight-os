@@ -1,0 +1,67 @@
+# Core
+sudo
+dbus
+dbus-user-session
+
+# Wayland
+sway
+swaybg
+swayidle
+swaylock
+seatd
+
+# UI
+foot
+wofi
+
+# Graphics / GPU
+mesa-utils
+mesa-va-drivers
+mesa-vulkan-drivers
+vulkan-tools
+libgl1-mesa-dri
+libva2
+vainfo
+
+# Audio
+pipewire
+wireplumber
+pipewire-audio
+pavucontrol
+
+# Networking
+network-manager
+wpasupplicant
+
+# Bluetooth
+bluez
+bluez-tools
+
+# Input
+libinput10
+libinput-tools
+
+# Utilities
+brightnessctl
+rfkill
+htop
+curl
+kbd
+locales
+console-setup
+keyboard-configuration
+
+# PolicyKit
+policykit-1
+lxqt-policykit
+
+# Firmware
+firmware-linux
+firmware-linux-free
+firmware-linux-nonfree
+firmware-iwlwifi
+firmware-realtek
+firmware-amd-graphics
+
+# For appimages
+fuse

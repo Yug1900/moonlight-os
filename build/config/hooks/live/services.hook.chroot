@@ -1,0 +1,4 @@
+#!/bin/sh
+systemctl enable NetworkManager
+systemctl enable bluetooth
+systemctl enable seatd

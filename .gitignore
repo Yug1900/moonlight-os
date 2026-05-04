@@ -1,0 +1,13 @@
+binary/
+chroot/
+cache/
+local/
+tmp/
+
+*.iso
+*.img
+*.log
+
+*~
+*.swp
+.DS_Store

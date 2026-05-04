@@ -1,0 +1,33 @@
+set $mod Mod4
+
+# Launch Moonlight
+exec_always /opt/moonlight/moonlight
+
+# PolicyKit agent
+exec_always lxqt-policykit-agent
+
+# Terminal fallback
+bindsym $mod+Return exec foot
+
+# Relaunch Moonlight
+bindsym $mod+r exec pkill moonlight; /opt/moonlight/moonlight
+
+# Wi-Fi menu
+bindsym $mod+w exec foot -e nmtui
+
+# Bluetooth (basic)
+bindsym $mod+b exec foot -e bluetoothctl
+
+# Volume
+bindsym XF86AudioRaiseVolume exec wpctl set-volume @DEFAULT_AUDIO_SINK@ 5%+
+bindsym XF86AudioLowerVolume exec wpctl set-volume @DEFAULT_AUDIO_SINK@ 5%-
+
+# Brightness
+bindsym XF86MonBrightnessUp exec brightnessctl set +10%
+bindsym XF86MonBrightnessDown exec brightnessctl set 10%-
+
+# Exit / power
+bindsym $mod+Shift+e exec poweroff
+
+# Minimal look
+output * bg #000000 solid_color
