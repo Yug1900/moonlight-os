@@ -1,5 +1,8 @@
 set $mod Mod4
 
+# Make sure seat is running
+exec_always seatd -g seat
+
 # Launch Moonlight
 exec_always /opt/moonlight/moonlight
 

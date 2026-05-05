@@ -13,6 +13,11 @@ seatd
 # UI
 foot
 wofi
+qtwayland5
+libqt5gui5
+libqt5waylandclient5
+libqt5widgets5
+xwayland
 
 # Graphics / GPU
 mesa-utils

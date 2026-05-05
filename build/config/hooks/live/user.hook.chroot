@@ -1,4 +1,5 @@
 #!/bin/sh
+getent group seat || groupadd -r seat
 useradd -m -s /bin/bash user
 echo "user:user" | chpasswd
 usermod -aG sudo,seat,video user
